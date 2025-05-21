@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heartline – A direct line to someone’s tomorrow</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Heartline</h1>
+      <p>A direct line to someone’s tomorrow.</p>
+      <a href="#donate" class="cta">Give Now</a>
+    </header>
+
+    <section id="about" class="section">
+      <h2>About Heartline</h2>
+      <p>
+        Heartline exists to bridge compassion and need quickly, directly, and
+        without barriers.
+      </p>
+      <p>
+        What began as a small effort to help families with basic needs like gas,
+        groceries, and school supplies has grown into a focused initiative
+        committed to making immediate, tangible impact in people’s lives. In our
+        earliest days, Heartline was a simple idea: if someone was struggling to
+        afford a tank of gas to get to work, or school supplies for their child,
+        why should they have to wait weeks for help, if help came at all?
+      </p>
+      <p>
+        We realized the gap wasn’t just in funding. It was in speed, trust, and
+        connection.
+      </p>
+      <p>
+        Today, Heartline is dedicated to solving small but urgent needs with
+        care, transparency, and immediacy. We operate with minimal overhead and
+        no middlemen, which means donations go straight toward things that
+        matter most. Filling a tank, stocking a fridge, or preparing a child for
+        school. We focus on micro-assistance that makes a macro difference in
+        someone’s day.
+      </p>
+      <p>
+        We believe that kindness is a powerful force for good. It can change
+        lives, uplift communities, and create a ripple effect of generosity. By
+        connecting people who want to help with those who need it most, we’re
+        creating a community of compassion that transcends barriers and
+        transforms lives.
+      </p>
+    </section>
+
+    <section id="mission" class="section">
+      <h2>Our Mission</h2>
+      <p>
+        Heartline connects everyday kindness to real-world need by delivering
+        fast, direct support to individuals facing tough times. We provide
+        essentials like gas cards, grocery assistance, and school supplies
+        without red tape, without delay, and without middlemen. Every donation
+        goes straight to someone in need, turning small acts of generosity into
+        immediate relief and renewed hope.
+      </p>
+    </section>
+
+    <section id="stories" class="section alt">
+      <h2>Stories</h2>
+      <p>See the lives you’re touching:</p>
+      <blockquote>
+        “I was down to fumes in my gas tank with two interviews lined up. That
+        card came at the perfect time — I got the job.” –
+        <span class="names">Daniel, NV</span>
+      </blockquote>
+      <blockquote>
+        “We had cereal and canned beans left for the week. The grocery gift card
+        felt like a miracle. I finally got to cook my kids a real meal.” –
+        <span class="names"> Alejandra, NM </span>
+      </blockquote>
+      <blockquote>
+        “I’m a full-time student and a single mom. That backpack had everything
+        my son needed. He felt like he belonged for the first time.” –
+        <span class="names"> Jasmine, NY </span>
+      </blockquote>
+      <blockquote>
+        “After my hours got cut, I couldn’t afford gas to visit my dad in the
+        hospital. Heartline made that visit possible. I’ll never forget it.” –
+        <span class="names"> Ray, FL </span>
+      </blockquote>
+      <blockquote>
+        “I used to skip lunch just so my kids could eat. The groceries you
+        helped us buy gave me peace I haven’t felt in months.” – Lauren, MO
+        <span class="names"> Lauren, MO </span>
+      </blockquote>
+      <blockquote>
+        “It’s not just about the supplies. It’s about someone out there caring.
+        That school kit made my daughter feel seen.” –
+        <span class="names"> Tonya, WA </span>
+      </blockquote>
+    </section>
+
+    <section id="vision" class="section">
+      <h2>Our Vision</h2>
+      <p>
+        We envision a world where no one feels alone in their struggles. A world
+        where kindness is the norm, not the exception. A world where help is
+        immediate, accessible, and compassionate. We believe that together, we
+        can create a future where everyone has the support they need to thrive.
+      </p>
+      <p>
+        A world where people in crisis can receive help not someday, but right
+        now because someone cared enough to give, and we made sure it reached
+        them.
+      </p>
+      <p>
+        Heartline is more than a platform. It’s a direct line between everyday
+        kindness and someone’s tomorrow.
+      </p>
+    </section>
+
+    <section class="auto-gallery">
+      <div class="scroll-wrapper" id="scrollWrapper">
+        <!-- Images will be inserted dynamically via JS -->
+      </div>
+
+      <!-- Modal for full image view -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
+    </section>
+
+    <section id="impact" class="section alt">
+      <h2>Our Impact</h2>
+      <p>With small donations, we’ve delivered:</p>
+      <ul>
+        <li>📦 68 grocery gift cards</li>
+        <li>⛽ 92 gas cards</li>
+        <li>🎒 56 school supply kits</li>
+      </ul>
+    </section>
+
+    <section id="donate" class="section">
+      <h2>Donate</h2>
+      <p>
+        Your donation goes straight to someone who needs help. Choose a wallet
+        below:
+      </p>
+      <div class="wallets">
+        <div>
+          <h3>Bitcoin (BTC)</h3>
+          <img src="BTC_QR.png" alt="Bitcoin QR" />
+          <code onclick="copyText(this)">
+            bc1qav9f4q77k2m06rhcyscs0phk9hwxee9xl9z6c3
+          </code>
+          <button onclick="copyText(this.previousElementSibling)">Copy</button>
+        </div>
+        <div>
+          <h3>Ethereum (ETH)</h3>
+          <img src="ETH_QR.png" alt="Ethereum QR" />
+          <code onclick="copyText(this)">
+            0xcf4066E0796F74833eCf0E86b36A0A643221c577
+          </code>
+          <button onclick="copyText(this.previousElementSibling)">Copy</button>
+        </div>
+        <div>
+          <h3>Tether (USDT ERC20)</h3>
+          <img src="USDT_QR.png" alt="Tether QR" />
+          <code onclick="copyText(this)"
+            >0xcf4066E0796F74833eCf0E86b36A0A643221c577</code
+          >
+          <button onclick="copyText(this.previousElementSibling)">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-crypto" class="section alt">
+      <h2>Why Crypto?</h2>
+      <p>
+        We accept donations in Bitcoin (BTC), Ethereum (ETH), and Tether (USDT)
+        because:
+      </p>
+      <ul>
+        <li>
+          ~ It’s global: anyone, anywhere can support a person in need,
+          instantly.
+        </li>
+        <li>
+          ~ It’s fast: traditional banking and charity systems take days or
+          weeks. Crypto moves in minutes.
+        </li>
+        <li>
+          ~ It’s transparent: with public ledgers, donors can verify that their
+          funds were received and used.
+        </li>
+      </ul>
+
+      <p>
+        Crypto helps us eliminate delays, fees, and bureaucracy—allowing
+        Heartline to stay lean, efficient, and focused entirely on helping
+        people faster.
+      </p>
+      <p>
+        We’re not just a charity. We’re a movement. A movement to make kindness
+        immediate, accessible, and impactful. And with your help, we can make
+        that vision a reality.
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq active">
+          <button class="faq-question">What is Heartline?</button>
+          <div class="faq-answer">
+            Heartline is a direct impact aid initiative that provides essentials
+            like gas cards, groceries, and school supplies quickly and
+            transparently to those in need.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">Who receives the support?</button>
+          <div class="faq-answer">
+            We help individuals and families facing urgent needs, working
+            parents, students, and everyday people who need a hand getting
+            through the month.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">
+            How do I know where my donation goes?
+          </button>
+          <div class="faq-answer">
+            We keep things transparent and lean, 100% of your donation goes
+            directly to relief efforts, and we frequently share stories and
+            updates so you can see the impact.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">Why do you only accept crypto?</button>
+          <div class="faq-answer">
+            Crypto allows us to bypass banks, delays, and fees. It helps us
+            deliver aid quickly, and receive donations across borders, without
+            overhead or middlemen.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">
+            Is my crypto donation tax-deductible?
+          </button>
+          <div class="faq-answer">
+            Currently, we are not a registered 501(c)(3), so donations are not
+            tax-deductible. However, your support directly helps people and is
+            publicly verifiable.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question">Can I nominate someone for help?</button>
+          <div class="faq-answer">
+            Yes. Soon, we'll launch a simple form where you can refer someone in
+            need. In the meantime, reach out via our outreach team.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-the-founder" class="section">
+      <h2>About the Founder</h2>
+      <div class="founder">
+        <img src="pounders.JPG" alt="Image of Camila Pounders" />
+      </div>
+      <p>
+        I was born on January 7th, 2001, in Modesto, California. Life taught me
+        responsibility early, my dad left when I was still young, and that meant
+        stepping up to help my mom and care for my little sister. There were
+        times when we struggled to fill up the tank or cover basic groceries,
+        but we always found a way to keep going. I saw how powerful even the
+        smallest act of help could be a neighbor’s kindness, a $20 bill in an
+        envelope, a ride from someone who cared.
+      </p>
+      <p>Those memories stuck with me.</p>
+      <p>
+        Today, I serve as a Marine at Camp Pendleton, and while I wear a
+        uniform, I’ve never stopped thinking about the people who feel like
+        they're barely getting by. Not just here, everywhere. That’s why I
+        started Heartline.
+      </p>
+      <p>
+        Heartline is my way of giving back, by creating a direct, fast, and
+        compassionate way to help someone who’s struggling. Whether it's a gas
+        card, grocery support, or school supplies, your donations go straight to
+        someone who needs it, no red tape, no delay.
+      </p>
+      <p>
+        I believe in the power of kindness. I believe that even a small act can
+        change someone’s day, or even their life. And I believe that together,
+        we can make a difference.
+      </p>
+      Every bit helps. Every person matters. And together, we make sure no one
+      feels like they’re alone.
+    </section>
+
+    <footer>
+      <p>© 2025 Heartline. Built with care.</p>
+    </footer>
+
+    <script>
+      function copyText(element) {
+        const text = element.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          const originalText = element.innerText;
+          element.innerText = "Copied!";
+          setTimeout(() => {
+            element.innerText = originalText;
+          }, 1200);
+        });
+      }
+    </script>
+
+    <script>
+      const faqs = document.querySelectorAll(".faq");
+
+      function closeAllFaqs() {
+        faqs.forEach((f) => {
+          const answer = f.querySelector(".faq-answer");
+          f.classList.remove("active");
+          answer.style.height = "0px";
+        });
+      }
+
+      faqs.forEach((faq, index) => {
+        const btn = faq.querySelector(".faq-question");
+        const answer = faq.querySelector(".faq-answer");
+
+        btn.addEventListener("click", () => {
+          const isOpen = faq.classList.contains("active");
+          closeAllFaqs();
+          if (!isOpen) {
+            faq.classList.add("active");
+            answer.style.height = answer.scrollHeight + "px";
+          }
+        });
+
+        // Open the first FAQ by default on page load
+        if (index === 0) {
+          faq.classList.add("active");
+          answer.style.height = answer.scrollHeight + "px";
+        }
+      });
+    </script>
+    <script>
+      const imageSources = [
+        "images/aaron-burden-1zR3WNSTnvY-unsplash.jpg",
+        "images/calle-macarone-Vl78eNdiJaQ-unsplash.jpg",
+        "images/dawn-mcdonald-TIZmsrOw7vc-unsplash.jpg",
+        "images/javier-trueba-iQPr1XkF5F0-unsplash.jpg",
+        "images/joel-muniz-qvzjG2pF4bE-unsplash.jpg",
+        "images/jon-tyson-rbz1hVh7_LM-unsplash.jpg",
+        "images/maria-lin-kim-8RaUEd8zD-U-unsplash.jpg",
+        "images/nico-smit-NFoerQuvzrs-unsplash.jpg",
+        "images/note-thanun-CYlPykF-qAM-unsplash.jpg",
+        "images/pexels-137666-710743.jpg",
+        "images/pexels-anna-pou-9345625.jpg",
+        "images/pexels-buro-millennial-636760-1438072.jpg",
+        "images/pexels-ekaterina-bolovtsova-4868606.jpg",
+        "images/pexels-gerzon-pinata-470468947-32056969.jpg",
+        "images/pexels-greta-hoffman-9706144.jpg",
+        "images/pexels-jen-1133763-2203416.jpg",
+        "images/pexels-jeshoots-7433.jpg",
+        "images/pexels-julia-m-cameron-6994982.jpg",
+        "images/pexels-julia-m-cameron-6995221.jpg",
+        "images/pexels-kampus-7551597.jpg",
+        "images/pexels-karolina-grabowska-4887256.jpg",
+        "images/pexels-liza-summer-6347730.jpg",
+        "images/pexels-max-fischer-5212329.jpg",
+        "images/pexels-pavel-danilyuk-7055088.jpg",
+        "images/pexels-rdne-6646778.jpg",
+        "images/pexels-ron-lach-8657196.jpg",
+        "images/pexels-steven-arenas-14151-362948.jpg",
+        "images/samuel-yongbo-kwon-Akth8VmjuKM-unsplash.jpg",
+        "images/samuel-yongbo-kwon-Akth8VmjuKM-unsplash.jpg",
+        "images/willo-team-mFMNg0T250Y-unsplash.jpg",
+      ];
+
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      function createMasonrySet() {
+        const columns = 3;
+        const shuffled = [...imageSources];
+        shuffle(shuffled);
+
+        const columnArray = Array.from({ length: columns }, () => []);
+
+        shuffled.forEach((src, i) => {
+          columnArray[i % columns].push(src);
+        });
+
+        return columnArray;
+      }
+
+      function setupGallery() {
+        const wrapper = document.getElementById("scrollWrapper");
+
+        // Create two masonry sets for seamless loop
+        for (let i = 0; i < 2; i++) {
+          const masonry = createMasonrySet();
+          masonry.forEach((column) => {
+            const columnDiv = document.createElement("div");
+            columnDiv.className = "masonry-column";
+            column.forEach((src) => {
+              const img = document.createElement("img");
+              img.src = src;
+              img.alt = "";
+              img.onclick = () => openModal(src);
+              columnDiv.appendChild(img);
+            });
+            wrapper.appendChild(columnDiv);
+          });
+        }
+      }
+
+      function openModal(src) {
+        document.getElementById("modalImage").src = src;
+        document.getElementById("imageModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      window.onload = setupGallery;
+    </script>
+  </body>
+</html>
