@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLD3NSQ7Z4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CLD3NSQ7Z4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-CLD3NSQ7Z4');
-</script>
+      gtag("config", "G-CLD3NSQ7Z4");
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -218,19 +223,67 @@
       <h2>Our Impact</h2>
       <p>With small donations, we’ve delivered:</p>
       <ul>
-        <li>📦 389 grocery gift cards</li>
-        <li>⛽ 402 gas cards</li>
-        <li>🎒 267 school supply kits</li>
+        <li>📦 539 grocery gift cards</li>
+        <li>⛽ 420 gas cards</li>
+        <li>🎒 367 school supply kits</li>
       </ul>
     </section>
 
+    <section id="commitment-form" class="commitment-form section">
+      <h2>Join the Movement</h2>
+      <p>
+        We’re not just a charity. We’re a movement. A movement to make kindness
+        immediate, accessible, and impactful. And with your help, we can make
+        that vision a reality.
+      </p>
+      <div class="form-section">
+        <form
+          action="https://formsubmit.co/9d05e87f924a65e66a49c62decbb87a0"
+          method="POST"
+          id="beastForm"
+          onsubmit="handleForm(event)"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+
+          <input type="text" name="name" placeholder="Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input
+            type="text"
+            name="city"
+            placeholder="City / Country"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Write a message of encouragement or support to the person your donation will help!"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
     <section id="donate" class="section">
-      <h2>Donate</h2>
+      <!-- <h2>Donate</h2> -->
       <p>
         Your donation goes straight to someone who needs help. Choose a wallet
         below:
       </p>
       <div class="wallets">
+        <!-- <div>
+          <h3>Cash App</h3>
+          <img src="BTC_QR.png" alt="Bitcoin QR" />
+          <code onclick="copyText(this)"> $cashtag </code>
+          <button onclick="copyText(this.previousElementSibling)">Copy</button>
+        </div> -->
         <div>
           <h3>Bitcoin (BTC)</h3>
           <img src="BTC_QR.png" alt="Bitcoin QR" />
